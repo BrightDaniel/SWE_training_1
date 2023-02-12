@@ -1,0 +1,81 @@
+Shell Variables - 
+
+We can assume that variables are containers, or elements, or data, that can store one or several valuesat a time. In shell, we have (2) types of variables, namely:
+Environment variables
+Shell (local) Variables
+
+
+1) Environmental variables
+
+What is an environment variable?
+Environment variables or ENVs basically define the behavior of the environment. They can affect the processes ongoing or the programs that are executed in the environment.  
+
+Scope of an environment variable
+Scope of any variable is the region from which it can be accessed or over which it is defined. An environment variable in Linux can have global or local scope.  
+
+2) Local Variables - 
+A shell variable is a character string in shell that stores some value. It could be an integer, filename, string or some shell command itself that can only be used locally. Basically, it is a pointer to the actual data stored in memory.
+
+A variable name could contain any alphabets (a-z, A-Z), any digits(0-9) and underscore( _ ). However, a variable name must start with an alphabet or underscore. It can never start with a number. 
+
+Here are some examples:
+
+Valid Variable Names
+
+ABC
+_AV_3
+AV232
+
+Invalid variable names 
+
+2_AN
+!ABD
+$ABC
+&QAID
+
+Here is the syntax for storing a variable:
+variable_name = <variable data>
+
+Example 
+num="1"
+name="Devil"
+
+Variable data could be accessed by appending the variable name with echo followed by "$var_name"
+
+Example:
+#!/bin/bash
+
+VAR_1="Devil"
+VAR_2="OWL"
+
+echo "$VAR_1$VAR_2"
+
+
+Unseting variables.
+The unset command directs a shell to delete a variable and its stored data from list of variables. It can be used as follows:
+
+#!/bin/bash
+
+var1="Devil"
+var2=23
+echo $var1 $var2
+
+unset var1
+
+echo $var1 $var2
+
+Read only Variables
+These variables are read only i.e, their values could not be modified later in the script. Following is an example:
+
+#!/bin/bash
+var1="Devil"
+var2=23
+readonly var1
+echo $var1 $var2
+var1=23
+echo $var1 $var2
+
+
+Examples
+Now let us see all the above codes in action together. Following is a shell script that includes all the shell variables, discussed above.
+

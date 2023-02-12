@@ -1,6 +1,5 @@
-Shell Scripting, Introduction to:
+Shell Scripting, Introduction:  - 15min 
 	Shell Variables - 15min
 	If else statement  - 15min
-	User Input and comments -15min
-	Conclusion -10min
+	Conclusion - 10min
 	
