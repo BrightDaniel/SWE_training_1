@@ -1,0 +1,20 @@
+	Print out a simple cal in c.  (+ - * /)
+
+
+	step 1: get the 2 numbers and the operator from the user.
+		
+		- ask the user for number 1. number 2. and operator //done
+		- store the users response in a variable            //done
+		- based on the data in the variable that was stored, we can now start out step 2. 
+
+
+ 
+	step 2: Depending on the opreator, we want to either add , sub, mul, div.
+
+		- if the operator the user entered is +, we want to add the two numbers the user 			  entered together.
+		- if the operator the user entered is -, we want to sub the two numbers the user 		  	  entered together.
+		- if the operator the user entered is *, we want to mul the two numbers the user 		  	  entered together.
+		- if the operator the user entered is /, we want to div the two numbers the user 		  	  entered together.
+
+
+	step 3: Print out the results of our step 1 and step 2.
